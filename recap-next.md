@@ -78,3 +78,9 @@ Extensions VScode recommendées :
 
 tailwind se base sur une taille standard de 16px pour 1rem et une unité vaut 0.25rem donc 4px
 p-1	padding: 0.25rem; /* 4px */
+
+## Server component
+
+Par défaut tous les composants créées dans une app next sont des server components, attention si on fait un console.log il ne sera pas visible dans la console du navigateur mais bien dans la console coté serveur !
+
+si on veut utiliser useEffect ou useState ou des evenements navigateur (click...) on doit le faire dans un composant client : on précise en haut de la page `'use client';` pour transformer notre composant serveur en composant client. (à ce moment là les console.log sont visibles dans la console du navigateur)
