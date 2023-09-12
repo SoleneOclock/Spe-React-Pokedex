@@ -66,3 +66,10 @@ On peut ajouter un script dans le package.json pour fixer les erreurs eslint :
 ```
 On lance le script avec la commande `npm run lint:fix`
 
+## Tailwind
+
+C'est un framework CSS, on utilise les noms de classes pour faire notre style : https://tailwindcss.com/
+
+Extensions VScode recommendées : 
+- inline fold : permet de cacher la liste interminable de classes qui rend notre code peut lisible
+- tailwind css intellisence : permet d'avoir l'auto complétion sur les noms des classes
