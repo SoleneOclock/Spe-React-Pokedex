@@ -1,4 +1,5 @@
 import { Pokemon } from '@/@types/pokemon';
+import Card from '@/components/Card';
 
 const getData = async () => {
   const resultJson = await fetch('https://api-pokemon-fr.vercel.app/api/v1/pokemon');
@@ -17,10 +18,10 @@ export default async function Home() {
       <h2 className="text-pink-500 hover:text-cyan-500">
         Pokedex
       </h2>
-      <div className="">
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-2 p-2">
         {
           first10pokemons.map((pokemon) => (
-            <div key={pokemon.pokedexId}>{pokemon.name.fr}</div>
+            <Card pokemon={pokemon} />
           ))
         }
       </div>
