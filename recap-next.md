@@ -98,3 +98,10 @@ https://vercel.com/dashboard
 - on selectionne notre repo sur notre compte perso (pas sur une orga privée comme oclock-xray)
 - on clique sur import
 - vercel reconnait le framework utilisé et propose les commandes pour builder le code, le dossier où sera généré le bundle final et la commande pour lancer le téléchargement des dépendances.
+
+## Variables d'environnement
+
+https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables
+pour placer nos infos propre à un environnement (différentes si dev, preprod ou prod) ou des infos secretes qu'on ne veut pas giter on les place dans un fichier `.env.local`
+
+pour avoir accès aux variables dans les cleint components il faut les preceder de `NEXT_PUBLIC_`
