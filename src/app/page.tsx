@@ -1,12 +1,12 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="text-pink-500 hover:text-cyan-500">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-      </div>
+    <main className="min-h-screen p-4">
+      <h2 className="text-pink-500 hover:text-cyan-500">
+        Pokedex
+      </h2>
+      <p className="">
+        ici nos pokemons
+      </p>
     </main>
   );
 }

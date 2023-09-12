@@ -73,3 +73,8 @@ C'est un framework CSS, on utilise les noms de classes pour faire notre style : 
 Extensions VScode recommendées : 
 - inline fold : permet de cacher la liste interminable de classes qui rend notre code peut lisible
 - tailwind css intellisence : permet d'avoir l'auto complétion sur les noms des classes
+
+### unitées
+
+tailwind se base sur une taille standard de 16px pour 1rem et une unité vaut 0.25rem donc 4px
+p-1	padding: 0.25rem; /* 4px */
