@@ -21,7 +21,7 @@ export default async function Home() {
       <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-2 p-2">
         {
           first10pokemons.map((pokemon) => (
-            <Card pokemon={pokemon} />
+            <Card pokemon={pokemon} key={pokemon.pokedexId} />
           ))
         }
       </div>

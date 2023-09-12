@@ -1,3 +1,5 @@
+// on importe le composant Link de Next pour gerer une navigation
+import Link from 'next/link';
 import { Pokemon } from '@/@types/pokemon';
 
 interface CardProps{
@@ -6,7 +8,7 @@ interface CardProps{
 
 function Card({ pokemon }: CardProps) {
   return (
-    <div className="bg-cyan-900 rounded-lg shadow-lg p-4 flex flex-col w-full hover:bg-cyan-800">
+    <Link href={`/pokemon/${pokemon.name.en}`} className="bg-cyan-900 rounded-lg shadow-lg p-4 flex flex-col w-full hover:bg-cyan-800">
       <img
         src={pokemon.sprites.shiny || pokemon.sprites.regular}
         alt={pokemon.name.fr}
@@ -27,7 +29,7 @@ function Card({ pokemon }: CardProps) {
           </span>
         ))}
       </p>
-    </div>
+    </Link>
   );
 }
 
