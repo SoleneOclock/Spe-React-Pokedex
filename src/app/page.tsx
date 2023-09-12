@@ -14,8 +14,8 @@ export default async function Home() {
   const first10pokemons = data.slice(1, 9);
 
   return (
-    <main className="min-h-screen p-4">
-      <h2 className="text-pink-500 hover:text-cyan-500">
+    <main className="min-h-screen p-4 bg-cyan-300">
+      <h2 className="text-pink-500 hover:text-cyan-500 text-center">
         Pokedex
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-2 p-2">
