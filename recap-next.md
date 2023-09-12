@@ -89,3 +89,12 @@ si on veut utiliser useEffect ou useState ou des evenements navigateur (click...
 
 Tous les composant qui sont des pages sont dans le dossier `app`
 Tous les composants qui sont juste des morceaux d'UI sont dans un dossier `components`
+
+# Mise en prod sur Vercel
+
+https://vercel.com/dashboard
+- on créé un compte avec notre github.
+- on clique sur add new
+- on selectionne notre repo sur notre compte perso (pas sur une orga privée comme oclock-xray)
+- on clique sur import
+- vercel reconnait le framework utilisé et propose les commandes pour builder le code, le dossier où sera généré le bundle final et la commande pour lancer le téléchargement des dépendances.

@@ -2,7 +2,13 @@ import { Pokemon } from '@/@types/pokemon';
 import Card from '@/components/Card';
 
 const getData = async () => {
-  const resultJson = await fetch('https://api-pokemon-fr.vercel.app/api/v1/pokemon');
+  // attention quand tu vas deployer vercel merci de si tu deploi en preprod
+  // prendre telle url et si tu deploi en prod en prendre une autre
+  // je vais te donner l'url de l'api dans une variable d'environnement
+  // ah oui et je push pas le mot de passe de connexion à l'api sur github
+  // (c'est trop risqué tout le monde pourrait le voir)
+  // je vais te le donner en direct dans une variable d'environnement
+  const resultJson = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/pokemon`);
   const result = await resultJson.json();
   return result as Pokemon[];
 };

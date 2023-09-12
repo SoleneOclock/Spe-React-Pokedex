@@ -8,7 +8,7 @@ interface SinglePokemonProps {
 }
 
 const getPokemonData = async (name: string) => {
-  const result = await fetch(`https://api-pokemon-fr.vercel.app/api/v1/pokemon/${name}`);
+  const result = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/pokemon/${name}`);
   return result.json();
 };
 
